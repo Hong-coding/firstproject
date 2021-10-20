@@ -1,0 +1,61 @@
+body, p { margin: 0; padding: 0; }
+
+body { padding: 100px; background: #717171; }
+
+#content {
+	margin: 100px auto 20px auto;
+	border: 10px solid #4C4C4C;
+	width: 400px;
+	height: 266px;
+	position: relative;
+}
+
+#content img {
+	position: absolute;					/*  컨테이너 안에 들어가는 사진의 위치값 absolute= 이전 이미지 위에 얹어져야해.  새로운 absolute얻는 애가 위로 얹어짐*/
+	left: 0;
+	top: 0;
+}
+
+p { text-align: center; }
+
+/********** Link Styles ***********/
+
+#links {
+	width: 420px;
+	display: flex;
+	margin: auto;
+}
+
+#links a {
+	display: block;
+	flex: 1;
+	background: #6C0204;
+	height: 50px;
+	line-height: 50px;
+	color: #D5D5D5;
+	text-decoration: none;
+	font-family: Arial;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#links a:hover {
+	background: #A51D1F;
+	color: #fff;
+}
+
+/************ Animation Styles ************/
+
+/*.fadeinimg  class is going to run an animation */
+.fadeinimg {
+	animation: fadein 1s;	/* 1초동안 선명해지는 애니메이션을 작동시키는 클래스 */
+}
+
+/* fade in 하도록 하는 함수 */
+@keyframes fadein {
+	from {opacity:0;		/* 새 이미지가 와도 처음엔 투명도가 100이라 바뀐지 모름 */
+	}
+	to {opacity:1;
+	}
+}
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        instead of just swapping out the source, we'll have a crossfade effect as we go from one slide to the next, and we'll be using CSS to do that animation. 
+    </div>
+    <h1>css사용 이해</h1>
+    <div>
+        1. #content to be positioned relative,<br>
+        and absolutely positioning img. <br>  lef:0, top:0 고정(top left corner). 그 부모 엘레먼트 안의 기준. <br> 
+        이렇게 박스로 감싸는건 슬라이드 쇼 원리: 이어지는 이미지를 이전 이미지 바로 위에 붙여서 하나 투명하게 사라지도록하는 것. crossfade effect 
+         
+        <br><br>
+        2. CSS Animation<br>
+        .css파일에 animation style 추가하기 (다른 사진에 얹어지는 사진에 클래스로 추가됨) <br>
+        클래스는 fadein함수를 실행함. <br>
+        자바에서 실행할 수 있는 걸 더 간편하게 만들어 주는 게 css- GPU(그래픽 프로세싱 유닛)를 이용해서 더 부드럽게 만들어주지<br>
+        자바에서 CSS애니매이션을 많이 trigger하게 될건데.<br>
+        Triggering an animation handled by CSS is more efficient than creating the same animation in JavaScript.​ The browser can make use of the GPU when CSS is used.<br>
+        Without an understanding of how positioning works in CSS, this script would be difficult to construct.​ Relative and absolute positioning in CSS can be tricky to master.​
+        <br><br>
+
+        3. 페이지에 element 추가하기, 삭제하기 using document object model & event handlers<br>
+        
+    </div>
+</body>
+</html>
